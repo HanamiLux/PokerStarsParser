@@ -14,7 +14,7 @@ namespace pokerTestParser
     public partial class MainWindow : Window
     {
         string _directoryPath = string.Empty;
-        string _path = $"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}/PokerHistory.json";
+        string _path = $"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}/summay_results.json";
         Thread _secondThread;
         public MainWindow()
         {
