@@ -1,0 +1,27 @@
+﻿<Window x:Class="pokerTestParser.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pokerTestParser"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <ListView x:Name="archiveListView" Grid.RowSpan="2" />
+        <Border Grid.Column="1" Background="Crimson" Drop="Border_Drop" AllowDrop="True">
+            <Label Content="Drop folder here" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="24px" FontWeight="Black" Foreground="#fff"/>
+
+        </Border>
+        <Button x:Name="browseButton" Content="Browse" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Width="270px" Height="50px" FontSize="40px" Background="#fff"  FontWeight="Black" Foreground="Crimson" Click="browseButton_Click"  />
+        <Button x:Name="exeButton" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="270px" Height="100px" Content="Execute" FontSize="40px" Background="Crimson"  FontWeight="Black" Foreground="#fff" Click="exeButton_Click"/>
+        <Label x:Name="percentsLabel" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="40px" FontWeight="Black" Foreground="Crimson"/>
+    </Grid>
+</Window>
